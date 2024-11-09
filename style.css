@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+  
+body {
+    background: linear-gradient(to bottom, #f7f7f7, #e0e0e0);
+    color: #333;
+}
+  
+.header {
+    background-color: #6699CC;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+  
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+  
+.social-links {
+    margin-top: 10px;
+}
+  
+.social {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+  
+.social:hover {
+    transform: scale(1.1);
+}
+  
+.social-icon {
+    width: 30px;
+    height: 30px;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+  
+.social:hover .social-icon {
+    filter: grayscale(0%);
+}
+  
+.section {
+    margin: 30px 15px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+  
+.projects .project {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+  
+.projects .project:hover {
+    background-color: #d5ffd5;
+}
+  
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+.certificate-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.certificate-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.certificate-img:hover {
+    transform: scale(1.05);
+}
+  
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
